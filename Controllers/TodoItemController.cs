@@ -22,23 +22,26 @@ namespace NetCoreApi.Controllers
 
         // GET: api/TodoItem
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<CTodoItemModel>>> GetColTodoItem()
+        public async Task<ActionResult<IEnumerable<CTodoItemDTO>>> GetColTodoItem()
         {
           if (_context.ColTodoItem == null)
           {
               return NotFound();
           }
-            return await _context.ColTodoItem.ToListAsync();
+            return await _context.ColTodoItem
+                .Select(x => ItemToDTO(x))
+                .ToListAsync();
         }
 
         // GET: api/TodoItem/5
         [HttpGet("{id}")]
-        public async Task<ActionResult<CTodoItemModel>> GetCTodoItemModel(long id)
+        public async Task<ActionResult<CTodoItemDTO>> GetCTodoItemModel(long id)
         {
-          if (_context.ColTodoItem == null)
-          {
-              return NotFound();
-          }
+            if (_context.ColTodoItem == null)
+            {
+                return NotFound();
+            }
+            
             var cTodoItemModel = await _context.ColTodoItem.FindAsync(id);
 
             if (cTodoItemModel == null)
@@ -46,7 +49,7 @@ namespace NetCoreApi.Controllers
                 return NotFound();
             }
 
-            return cTodoItemModel;
+            return ItemToDTO(cTodoItemModel);
         }
 
         // PUT: api/TodoItem/5
@@ -120,5 +123,13 @@ namespace NetCoreApi.Controllers
         {
             return (_context.ColTodoItem?.Any(e => e.Id == id)).GetValueOrDefault();
         }
+
+        private static CTodoItemDTO ItemToDTO(CTodoItemModel todoItem) =>
+        new CTodoItemDTO
+        {
+            Id = todoItem.Id,
+            Name = todoItem.Name,
+            IsComplete = todoItem.IsComplete
+        };
     }
 }

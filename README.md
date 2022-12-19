@@ -1,1 +1,1 @@
-"# api-rest-netcore-started" 
+# api-rest-netcore-started

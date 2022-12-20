@@ -14,7 +14,7 @@ builder.Services.AddDbContext<CTodoContext>(opt =>
 
 // Add Second DBContext in a DataBase PostgreSQL v15 (Non Volatile)
 builder.Services.AddDbContext<CItemContext>(options =>
-            options.UseNpgsql(@"Host=localhost;Database=db_todoNetCore;Username=postgres;Password=postgres15"));
+            options.UseNpgsql(builder.Configuration.GetConnectionString("pgSqlConnection")));
 
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();

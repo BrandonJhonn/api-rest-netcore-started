@@ -3,9 +3,9 @@
 #### Features:
 ***
 A list of features that you can found in this project:
-* Creación de Modelos y Contexto de Datos
-* Migracion de datos en Base de Datos PostgreSQL
-* Construcción de servicios CRUD con [aspnet-codegenerator]
+* Creation of Models and Data Contexts
+* Migration of data in DataBase PostgreSQL
+* Construction of CRUD's Services with [aspnet-codegenerator]
 
 #### Dependencies
 

@@ -7,9 +7,14 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllers();
 
+// Add First DBContext in Memory Storage (Volatile)
 builder.Services.AddDbContext<CTodoContext>(opt =>
     opt.UseInMemoryDatabase("DBTodoList")
 );
+
+// Add Second DBContext in a DataBase PostgreSQL v15 (Non Volatile)
+builder.Services.AddDbContext<CItemContext>(options =>
+            options.UseNpgsql(@"Host=localhost;Database=db_todoNetCore;Username=postgres;Password=postgres15"));
 
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();

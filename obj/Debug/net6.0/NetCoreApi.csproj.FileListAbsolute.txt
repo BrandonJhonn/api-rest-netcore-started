@@ -270,3 +270,15 @@ C:\SISTEMAS\3_Desktop\NetCoreApi\bin\Debug\net6.0\runtimes\win\lib\net6.0\System
 C:\SISTEMAS\3_Desktop\NetCoreApi\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
 C:\SISTEMAS\3_Desktop\NetCoreApi\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
 C:\SISTEMAS\3_Desktop\NetCoreApi\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+C:\SISTEMAS\3_Desktop\NetCoreApi\bin\Debug\net6.0\dotnet-ef.dll
+C:\SISTEMAS\3_Desktop\NetCoreApi\bin\Debug\net6.0\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\SISTEMAS\3_Desktop\NetCoreApi\bin\Debug\net6.0\Microsoft.Extensions.DependencyModel.dll
+C:\SISTEMAS\3_Desktop\NetCoreApi\bin\Debug\net6.0\Mono.TextTemplating.dll
+C:\SISTEMAS\3_Desktop\NetCoreApi\bin\Debug\net6.0\Npgsql.dll
+C:\SISTEMAS\3_Desktop\NetCoreApi\bin\Debug\net6.0\Npgsql.EntityFrameworkCore.PostgreSQL.dll
+C:\SISTEMAS\3_Desktop\NetCoreApi\bin\Debug\net6.0\System.CodeDom.dll
+C:\SISTEMAS\3_Desktop\NetCoreApi\bin\Debug\net6.0\System.Text.Encodings.Web.dll
+C:\SISTEMAS\3_Desktop\NetCoreApi\bin\Debug\net6.0\System.Text.Json.dll
+C:\SISTEMAS\3_Desktop\NetCoreApi\bin\Debug\net6.0\runtimes\browser\lib\net6.0\System.Text.Encodings.Web.dll
+C:\SISTEMAS\3_Desktop\NetCoreApi\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.Design.dll
+C:\SISTEMAS\3_Desktop\NetCoreApi\bin\Debug\net6.0\Npgsql.EntityFrameworkCore.PostgreSQL.Design.dll
